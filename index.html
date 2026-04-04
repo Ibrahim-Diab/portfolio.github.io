@@ -2,474 +2,678 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ibrahim Diab | iOS Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-
-  <style>
-    :root {
-      --primary-color: #1d3557;
-      --accent-color: #f59e0b;
-      --light-bg: #f4f6f8;
-      --card-bg: #ffffffcc;
-      --text-dark: #1f2937;
-      --text-muted: #6b7280;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      --border-radius: 18px;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--light-bg);
-      color: var(--text-dark);
-      line-height: 1.7;
-    }
-
-    .navbar {
-      background-color: var(--primary-color);
-    }
-
-    .navbar-dark .nav-link {
-      color: #e5e7eb;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .navbar-dark .nav-link:hover,
-    .navbar-dark .nav-link.active {
-      color: var(--accent-color);
-    }
-
-    header {
-      background: linear-gradient(150deg, #1d3557, #ccd5ae);
-      color: #14213d;
-      padding: 70px 20px 50px;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-    }
-
-    .social-links a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      background-color: white;
-      font-size: 1.25rem;
-      transition: all 0.3s ease;
-      box-shadow: var(--shadow);
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      background-color: var(--accent-color);
-      transform: translateY(-3px);
-    }
-
-    .social-links a:hover i {
-      color: white !important;
-    }
-
-    .section-box {
-      background-color: var(--card-bg);
-      backdrop-filter: blur(4px);
-      padding: 40px 30px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .section-box:hover {
-      transform: translateY(-4px);
-    }
-
-   .cv-button {
-        background: linear-gradient(135deg, #0ea5e9, #2563eb);
-        color: white;
-        border: none;
-        border-radius: 999px;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      }
-
-   .cv-button:hover {
-        background: linear-gradient(135deg, #2563eb, #0ea5e9);
-        color: #f59e0b;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-      }
-
-    #about h2 {
-      color: var(--primary-color) !important;
-      font-weight: 700;
-    }
-
-    .projects .card {
-      background-color: white;
-      border: none;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      transition: all 0.3s ease;
-    }
-
-    .projects .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 70px;
-      height: 70px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    .card-body {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .card-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    .card-text {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-    }
-
-    .links a {
-      color: var(--primary-color);
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-      color: var(--accent-color);
-    }
-
-    footer {
-      background-color: var(--primary-color);
-      color: #f3f4f6;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .card-body {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .card img {
-        margin-bottom: 10px;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="btn cv-button ms-3 fw-semibold px-4" href="App_Icons/IbrahimDiab-iOS.pdf" target="_blank" download>CV</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-         <li class="nav-item">
-          <a class="btn cv-button ms-3 fw-semibold px-4"
-             href="App_Icons/IbrahimDiab-iOS.pdf"
-             target="_blank"
-             download>
-            CV
-          </a>
-        </li>
-
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="text-center">
-  <h1 class="display-5 fw-bold">Ibrahim Diab</h1>
-  
-  <p class="lead">iOS Developer – SwiftUI / UIKit </p>
-  <div class="social-links d-flex justify-content-center gap-3 mt-3">
-    <a href="https://github.com/Ibrahim-Diab" target="_blank">
-      <i class="fab fa-github" style="color:#333;"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/ibrahim-diab7" target="_blank">
-      <i class="fab fa-linkedin" style="color:#0077B5;"></i>
-    </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimdiab011@gmail.com" target="_blank">
-      <i class="fas fa-envelope" style="color:#D14836;"></i>
-    </a>
-    <a href="https://stackoverflow.com/users/20919824/ibrahim-diab?tab=profile" target="_blank">
-         <i class="fab fa-stack-overflow" style="color:#f48024;"></i>
-       </a>
+<!-- Hero -->
+<header>
+  <div class="container">
+    <div class="hero-content">
+      <div class="profile-photo">
+        <img src="App_Icons/profile.png" alt="Ibrahim Diab">
+      </div>
+      <h1 class="display-5 fw-bold">Ibrahim Diab</h1>
+      <p class="lead mt-2">iOS Developer &mdash; SwiftUI / UIKit</p>
+      <div class="social-links d-flex justify-content-center gap-3 mt-4">
+        <a href="https://github.com/Ibrahim-Diab" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ibrahim-diab7" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimdiab011@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://stackoverflow.com/users/20919824/ibrahim-diab?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="section-box bg-light" id="about">
+<!-- About -->
+<section id="about">
   <div class="container py-5">
-    <h2 class="text-center mb-4 text-primary">About Me</h2>
-    <p class="text-center fs-5">
-    🍎👨‍💻 iOS Developer with 4+ years of experience building robust, user-friendly apps using UIKit and SwiftUI. Skilled in designing scalable architectures, integrating RESTful APIs, and implementing adaptive layouts with Auto Layout and SwiftUI. Successfully developed and published multiple apps across industries including e-commerce, transportation, and more. Passionate about clean code, performance optimization, and staying up to date with the latest iOS trends and technologies.
-    </p>
+    <div class="section-box">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p class="text-center fs-5">
+        iOS Developer with 4+ years of experience crafting production-ready apps using UIKit, SwiftUI, and Swift 6.
+        Passionate about scalable architectures, clean code, and delivering seamless user experiences across e-commerce,
+        transportation, and ERP domains. Experienced in leveraging AI tools and understanding LLM ecosystems — including
+        how models, agents, and MCP (Model Context Protocol) integrate to accelerate modern development workflows.
+      </p>
+    </div>
   </div>
 </section>
 
+<!-- Experience -->
+<section id="experience">
+  <div class="container py-5">
+    <h2 class="mb-2">Experience</h2>
+    <div class="section-line"></div>
 
-<main class="container mb-4" id="projects">
-<!--  <h2 class="text-center mb-4">Projects</h2>-->
-
-  <div class="row g-4 projects">
-      
-      <!-- Teacher Now -->
-      <div class="col-md-4 project_card">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex">
-            <img src="App_Icons/TNClient.png" class="img-fluid rounded me-3" alt="Transit Client">
-            <div class="links">
-              <h5 class="card-title mb-1">Teacher Now</h5>
-              <p class="card-text mb-2">Connects students and teachers with content subscriptions and payments.</p>
-              <p class="text-muted small mb-2">Platform: iOS | SwiftUI, UIKit, Combine, MyFatoorah</p>
-              <a href="https://apps.apple.com/us/app/teachernow/id6502044672">App Store</a>
-            </div>
-          </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">May 2023 &mdash; Present</div>
+          <h5 class="timeline-title">iOS Developer</h5>
+          <p class="timeline-company">Awamer Alshabaka (AAIT)</p>
+          <ul class="timeline-details">
+            <li><span class="spot">Head of iOS squads</span>, driving architecture decisions and sprint delivery</li>
+            <li>Architected a reusable <span class="spot">SwiftUI base project</span> with <span class="spot">Clean Architecture</span> (MVVM + Coordinator), <span class="spot">Swift 6</span>, and <span class="spot">modern concurrency</span> (async/await, actors), adopted across all new apps</li>
+            <li>Shipped and maintained <span class="spot">production iOS apps</span> across e-commerce, delivery, and ERP domains</li>
+            <li>Established <span class="spot">code review culture</span> and performance optimization standards for the team</li>
+            <li><span class="spot">Mentored junior developers</span> and streamlined onboarding with technical documentation</li>
+            <li>Collaborated with cross-functional teams to integrate <span class="spot">APIs</span>, <span class="spot">payments</span>, and <span class="spot">real-time features</span></li>
+          </ul>
         </div>
       </div>
-      <!-- end card -->
 
-      <!-- Teacher Now Provider -->
-      <div class="col-md-4 project_card">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex">
-            <img src="App_Icons/TNProvider.png" class="img-fluid rounded me-3" alt="Transit Client">
-            <div class="links">
-              <h5 class="card-title mb-1">Teacher Now Provider</h5>
-              <p class="card-text mb-2">Provider version for teachers to manage their content and subscriptions.</p>
-              <p class="text-muted small mb-2">Platform: iOS | SwiftUI, UIKit, Combine, MyFatoorah</p>
-              <a href="https://apps.apple.com/eg/app/teachernowprovider/id6502042966">App Store</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end card -->
-      
-      <!-- Cylinder -->
-      <div class="col-md-4 project_card">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex">
-            <img src="App_Icons/Cylinder.jpg" class="img-fluid rounded me-3" alt="Transit Client">
-            <div class="links">
-              <h5 class="card-title mb-1">Cylinder (أسطوانة)</h5>
-              <p class="card-text mb-2">Gas delivery app with location, instant or scheduled delivery, and flexible payments.</p>
-              <p class="text-muted small mb-2">Platform: iOS | MVVM, Combine, Deep Link</p>
-              <a href="https://apps.apple.com/eg/app/cylinder-%D8%A7%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A9/id6708238179">App Store</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end card -->
-
-       <!-- MyTaxi -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/MyTaxi_Client.png" class="img-fluid rounded me-3" alt="MyTaxi">
-          <div class="links">
-            <h5 class="card-title mb-1">MyTaxi</h5>
-            <p class="card-text mb-2">
-            delivery app , ride sharing,and a rewards system. trip tracking, and multiple payment methods.
-            </p>
-            <p class="text-muted small mb-2">Platform: iOS | UIKit, Firebase, MVVM, Socket, Google Maps</p>
-            <a href="https://apps.apple.com/eg/app/my-taxi/id6717596448">App Store</a>
-          </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Nov 2022 &mdash; May 2023</div>
+          <h5 class="timeline-title">iOS Developer</h5>
+          <p class="timeline-company">MolTaqa</p>
+          <ul class="timeline-details">
+            <li><span class="spot">Refactored multiple legacy iOS apps</span>, improving code quality, stability, and maintainability</li>
+            <li>Developed and shipped <span class="spot">new features</span> across existing apps aligned with business requirements</li>
+            <li>Built and launched the <span class="spot">Talab e-commerce</span> delivery and pickup app from scratch</li>
+            <li>Resolved <span class="spot">production bugs and crashes</span>, significantly improving app performance and user retention</li>
+            <li>Participated in <span class="spot">app architecture</span> decisions and <span class="spot">backend API design</span></li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- end card -->
-    
-    <!-- MyTaxi Delegate -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/MyTaxi_Delegate.png" class="img-fluid rounded me-3" alt="MyTaxi Delegate">
-          <div class="links">
-            <h5 class="card-title mb-1">MyTaxi Delegate</h5>
-            <p class="card-text mb-2">
-            The delegate version of MyTaxi allows drivers to manage and accept trips and deliveries in real-
-            time with location tracking.
-            </p>
-            <p class="text-muted small mb-2">Platform: iOS | UIKit, Firebase, MVVM, Socket, Google Maps</p>
-            <a href="https://apps.apple.com/eg/app/mytaxidelegate/id6720725822">App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-      
-
-    <!-- To R -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/ToR.png" class="img-fluid rounded me-3" alt="To R">
-          <div class="links">
-            <h5 class="card-title mb-1">To R</h5>
-            <p class="card-text mb-2">Dual-role app for customers and delegates. Customers buy from stores, delegates deliver products.</p>
-            <p class="text-muted small mb-2">Platform: iOS | SwiftUI, MVVM, Coordinator</p>
-            <a href="https://apps.apple.com/eg/app/torequest/id6744581523" >App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-    
-
-    <!-- Transit -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/Transit_Client.png" class="img-fluid rounded me-3" alt="Transit Client">
-          <div class="links">
-            <h5 class="card-title mb-1">Transit Client</h5>
-            <p class="card-text mb-2">Shipping app for selecting package type, vehicle, and getting offers from delivery delegates.</p>
-            <p class="text-muted small mb-2">Platform: iOS | SwiftUI, MVVM, Coordinator</p>
-            <a href="https://testflight.apple.com/join/QvpdqSaH">TestFlight</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-
-    <!-- Transit Delegate -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/Transit_Delegate.png" class="img-fluid rounded me-3" alt="Transit Client">
-          <div class="links">
-            <h5 class="card-title mb-1">Transit Delegate</h5>
-            <p class="card-text mb-2">Delegate-side version to accept delivery requests and offer prices based on vehicle type.</p>
-            <p class="text-muted small mb-2">Platform: iOS | SwiftUI, MVVM, Coordinator</p>
-            <a href="https://testflight.apple.com/join/QvpdqSaH">TestFlight</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-    
-    <!-- Smart Record -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/SmartRecord.png" class="img-fluid rounded me-3" alt="Transit Client">
-          <div class="links">
-            <h5 class="card-title mb-1">Smart Record</h5>
-            <p class="card-text mb-2">High-quality audio recording app with trimming, noise reduction, and cloud backup.</p>
-            <p class="text-muted small mb-2">Platform: iOS | UIKit, AVFoundation, Firebase, DI</p>
-            <a href="https://apps.apple.com/eg/app/smartrecord/id6468998582">App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-
-    <!-- Nujdik -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/Nujdik.png" class="img-fluid rounded me-3" alt="Transit Client">
-          <div class="links">
-            <h5 class="card-title mb-1">Nujdik</h5>
-            <p class="card-text mb-2">Livestock e-commerce app using Firebase, Google Maps, and secure real-time experience.</p>
-            <p class="text-muted small mb-2">Platform: iOS | UIKit, Firebase, Socket, Google Maps</p>
-            <a href="https://apps.apple.com/eg/app/nujdiak/id6739465906">App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-    
-    <!-- Pikrose -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/PickRose_Client.png" class="img-fluid rounded me-3" alt="Pikrose">
-          <div class="links">
-            <h5 class="card-title mb-1">Pikrose</h5>
-            <p class="card-text mb-2">
-              Send heartfelt gifts for any occasion. Select your items, and the team prepares and delivers them with care.
-            </p>
-            <p class="text-muted small mb-2">Platform: iOS | MVC, Combine, UIKit</p>
-            <a href="https://apps.apple.com/eg/app/pikrose/id1671909972">App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
-
-    <!-- Pikrose Delegate -->
-    <div class="col-md-4 project_card">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex">
-          <img src="App_Icons/PickRose_Delegate.png" class="img-fluid rounded me-3" alt="Pikrose Delegate">
-          <div class="links">
-            <h5 class="card-title mb-1">Pikrose Delegate</h5>
-            <p class="card-text mb-2">
-              Manage and fulfill gift delivery orders efficiently with the delegate version of Pikrose.
-            </p>
-            <p class="text-muted small mb-2">Platform: iOS | MVC, Combine, UIKit</p>
-            <a href="https://apps.apple.com/eg/app/pikrose-delegate/id6445875946">App Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card -->
 
   </div>
-</main>
+</section>
 
+<!-- Projects -->
+<section id="projects">
+  <div class="container py-5">
+    <h2 class="text-center mb-2">Projects</h2>
+    <div class="section-line"></div>
+
+    <div class="row g-4">
+
+      <!-- Sakan -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="Sakan"
+             data-icon="App_Icons/Sakan.webp"
+             data-images='["Projects_Images/Sakan/460x996bb.webp","Projects_Images/Sakan/460x996bb-2.webp","Projects_Images/Sakan/460x996bb-3.webp","Projects_Images/Sakan/460x996bb-4.webp","Projects_Images/Sakan/460x996bb-5.webp","Projects_Images/Sakan/460x996bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/Sakan.webp" alt="App Icon"><span class="gallery-icon-name">Sakan</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-2.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-3.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-4.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-5.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-6.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-2.webp" alt="Sakan">
+              <img class="screenshot" src="Projects_Images/Sakan/460x996bb-3.webp" alt="Sakan">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/Sakan.webp" class="app-icon" alt="Sakan">
+              <h5>Sakan</h5>
+            </div>
+            <p class="project-description">Smart real estate platform connecting property seekers with agents. Request properties, specify requirements, receive matching offers, and communicate directly via in-app chat, calls, or WhatsApp.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">Socket</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/sakan-%D8%B3%D9%83%D9%86/id6753960709" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mesllah -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Mesllah"
+             data-icon="App_Icons/Mesllah.webp"
+             data-images='["Projects_Images/Mesllah/460x996bb.webp","Projects_Images/Mesllah/460x996bb-2.webp","Projects_Images/Mesllah/460x996bb-3.webp","Projects_Images/Mesllah/460x996bb-4.webp","Projects_Images/Mesllah/460x996bb-5.webp","Projects_Images/Mesllah/460x996bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/Mesllah.webp" alt="App Icon"><span class="gallery-icon-name">Mesllah</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-2.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-3.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-4.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-5.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-6.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-2.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-3.webp" alt="Mesllah">
+              <img class="screenshot" src="Projects_Images/Mesllah/460x996bb-4.webp" alt="Mesllah">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/Mesllah.webp" class="app-icon" alt="Mesllah">
+              <h5>Mesllah</h5>
+            </div>
+            <p class="project-description">ERP system to manage farm animals — tracking production, feed, medications, vaccinations, and buying/selling.</p>
+            <div class="project-tech">
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Coordinator</span>
+              <span class="tech-tag">Core Data</span>
+              <span class="tech-tag">Combine</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/mesllah/id6737547498" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bily Abaya -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="Bily Abaya"
+             data-icon="App_Icons/Bily.webp"
+             data-images='["Projects_Images/BillyAbayat/0x0ss.png","Projects_Images/BillyAbayat/0x0ss-2.png","Projects_Images/BillyAbayat/0x0ss-3.png","Projects_Images/BillyAbayat/0x0ss-4.png","Projects_Images/BillyAbayat/0x0ss-5.png","Projects_Images/BillyAbayat/0x0ss-6.png","Projects_Images/BillyAbayat/0x0ss-7.png","Projects_Images/BillyAbayat/0x0ss-8.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/Bily.webp" alt="App Icon"><span class="gallery-icon-name">Bily Abaya</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-2.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-3.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-4.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-5.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-6.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-2.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-3.png" alt="Bily">
+              <img class="screenshot" src="Projects_Images/BillyAbayat/0x0ss-4.png" alt="Bily">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/Bily.webp" class="app-icon" alt="Bily Abaya">
+              <h5>Bily Abaya</h5>
+            </div>
+            <p class="project-description">Premium abaya shopping app for Saudi Arabia — browse designs, choose designers or tailors, and pay securely.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Coordinator</span>
+              <span class="tech-tag">MVVM</span>
+            </div>
+            <a href="https://apps.apple.com/us/app/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%84-bily-abaya/id6745776184" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Easy Wash KSA -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Easy Wash KSA"
+             data-icon="App_Icons/EasyWash.webp"
+             data-images='["Projects_Images/EasyWashClient/400x800bb.png","Projects_Images/EasyWashClient/400x800bb-2.png","Projects_Images/EasyWashClient/400x800bb-3.png","Projects_Images/EasyWashClient/400x800bb-4.png","Projects_Images/EasyWashClient/400x800bb-5.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/EasyWash.webp" alt="App Icon"><span class="gallery-icon-name">Easy Wash KSA</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-2.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-3.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-4.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-5.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-2.png" alt="Easy Wash">
+              <img class="screenshot" src="Projects_Images/EasyWashClient/400x800bb-3.png" alt="Easy Wash">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/EasyWash.webp" class="app-icon" alt="Easy Wash KSA">
+              <h5>Easy Wash KSA</h5>
+            </div>
+            <p class="project-description">On-demand laundry app offering fast and regular services with flexible scheduling and secure payments.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Coordinator</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/%D8%BA%D8%B3%D9%8A%D9%84%D9%83-%D8%B3%D9%87%D9%84-easy-wash-ksa/id6739170279" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MyTaxi -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="MyTaxi"
+             data-icon="App_Icons/MyTaxi_Client.png"
+             data-images='["Projects_Images/MyTaxiClient/460x996bb.webp","Projects_Images/MyTaxiClient/460x996bb-2.webp","Projects_Images/MyTaxiClient/460x996bb-3.webp","Projects_Images/MyTaxiClient/460x996bb-4.webp","Projects_Images/MyTaxiClient/460x996bb-5.webp","Projects_Images/MyTaxiClient/460x996bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/MyTaxi_Client.png" alt="App Icon"><span class="gallery-icon-name">MyTaxi</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-2.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-3.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-4.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-5.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-6.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-2.webp" alt="MyTaxi">
+              <img class="screenshot" src="Projects_Images/MyTaxiClient/460x996bb-3.webp" alt="MyTaxi">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/MyTaxi_Client.png" class="app-icon" alt="MyTaxi">
+              <h5>MyTaxi</h5>
+            </div>
+            <p class="project-description">Delivery app, ride sharing, and a rewards system. Trip tracking, and multiple payment methods.</p>
+            <div class="project-tech">
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Socket</span>
+              <span class="tech-tag">Google Maps</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/my-taxi/id6717596448" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MyTaxi Delegate -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="MyTaxi Delegate"
+             data-icon="App_Icons/MyTaxi_Delegate.png"
+             data-images='["Projects_Images/MyTaxiDriver/460x996bb.webp","Projects_Images/MyTaxiDriver/460x996bb-2.webp","Projects_Images/MyTaxiDriver/460x996bb-3.webp","Projects_Images/MyTaxiDriver/460x996bb-4.webp","Projects_Images/MyTaxiDriver/460x996bb-5.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/MyTaxi_Delegate.png" alt="App Icon"><span class="gallery-icon-name">MyTaxi Delegate</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-2.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-3.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-4.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-5.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-2.webp" alt="MyTaxi Delegate">
+              <img class="screenshot" src="Projects_Images/MyTaxiDriver/460x996bb-3.webp" alt="MyTaxi Delegate">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/MyTaxi_Delegate.png" class="app-icon" alt="MyTaxi Delegate">
+              <h5>MyTaxi Delegate</h5>
+            </div>
+            <p class="project-description">Drivers manage and accept trips and deliveries in real-time with location tracking.</p>
+            <div class="project-tech">
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Socket</span>
+              <span class="tech-tag">Google Maps</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/mytaxidelegate/id6720725822" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Now -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="Teacher Now"
+             data-icon="App_Icons/TNClient.png"
+             data-images='["Projects_Images/TeacherNow/0x0ss-9.png","Projects_Images/TeacherNow/0x0ss-10.png","Projects_Images/TeacherNow/0x0ss-11.png","Projects_Images/TeacherNow/0x0ss-12.png","Projects_Images/TeacherNow/0x0ss-13.png","Projects_Images/TeacherNow/0x0ss-14.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/TNClient.png" alt="App Icon"><span class="gallery-icon-name">Teacher Now</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-9.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-10.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-11.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-12.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-13.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-14.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-9.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-10.png" alt="Teacher Now">
+              <img class="screenshot" src="Projects_Images/TeacherNow/0x0ss-11.png" alt="Teacher Now">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/TNClient.png" class="app-icon" alt="Teacher Now">
+              <h5>Teacher Now</h5>
+            </div>
+            <p class="project-description">Connects students and teachers with content subscriptions and payments.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">MyFatoorah</span>
+            </div>
+            <a href="https://apps.apple.com/us/app/teachernow/id6502044672" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Now Provider -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Teacher Now Provider"
+             data-icon="App_Icons/TNProvider.png"
+             data-images='["Projects_Images/TeacherNowProvider/0x0ss-15.png","Projects_Images/TeacherNowProvider/0x0ss-16.png","Projects_Images/TeacherNowProvider/0x0ss-17.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/TNProvider.png" alt="App Icon"><span class="gallery-icon-name">Teacher Now Provider</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-15.png" alt="Teacher Now Provider">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-16.png" alt="Teacher Now Provider">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-17.png" alt="Teacher Now Provider">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-15.png" alt="Teacher Now Provider">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-16.png" alt="Teacher Now Provider">
+              <img class="screenshot" src="Projects_Images/TeacherNowProvider/0x0ss-17.png" alt="Teacher Now Provider">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/TNProvider.png" class="app-icon" alt="Teacher Now Provider">
+              <h5>Teacher Now Provider</h5>
+            </div>
+            <p class="project-description">Provider version for teachers to manage their content and subscriptions.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">MyFatoorah</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/teachernowprovider/id6502042966" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- To R -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="To R"
+             data-icon="App_Icons/ToR.png"
+             data-images='["Projects_Images/ToRequest/460x996bb.webp","Projects_Images/ToRequest/460x996bb-2.webp","Projects_Images/ToRequest/460x996bb-3.webp","Projects_Images/ToRequest/460x996bb-4.webp","Projects_Images/ToRequest/460x996bb-5.webp","Projects_Images/ToRequest/460x996bb-6.webp","Projects_Images/ToRequest/460x996bb-7.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/ToR.png" alt="App Icon"><span class="gallery-icon-name">To R</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-2.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-3.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-4.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-5.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-6.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-2.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-3.webp" alt="To R">
+              <img class="screenshot" src="Projects_Images/ToRequest/460x996bb-4.webp" alt="To R">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/ToR.png" class="app-icon" alt="To R">
+              <h5>To R</h5>
+            </div>
+            <p class="project-description">Dual-role app for customers and delegates. Customers buy from stores, delegates deliver products.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Coordinator</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/torequest/id6744581523" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nujdik -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Nujdik"
+             data-icon="App_Icons/Nujdik.png"
+             data-images='["Projects_Images/Nujdik/460x998bb.webp","Projects_Images/Nujdik/460x998bb-2.webp","Projects_Images/Nujdik/460x998bb-3.webp","Projects_Images/Nujdik/460x998bb-4.webp","Projects_Images/Nujdik/460x998bb-5.webp","Projects_Images/Nujdik/460x998bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/Nujdik.png" alt="App Icon"><span class="gallery-icon-name">Nujdik</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-2.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-3.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-4.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-5.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-6.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-2.webp" alt="Nujdik">
+              <img class="screenshot" src="Projects_Images/Nujdik/460x998bb-3.webp" alt="Nujdik">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/Nujdik.png" class="app-icon" alt="Nujdik">
+              <h5>Nujdik</h5>
+            </div>
+            <p class="project-description">Livestock e-commerce app using Firebase, Google Maps, and secure real-time experience.</p>
+            <div class="project-tech">
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Socket</span>
+              <span class="tech-tag">Google Maps</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/nujdiak/id6739465906" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cylinder -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="Cylinder"
+             data-icon="App_Icons/Cylinder.jpg"
+             data-images='["Projects_Images/Cylinder/400x800bb.png","Projects_Images/Cylinder/400x800bb-2.png","Projects_Images/Cylinder/400x800bb-3.png","Projects_Images/Cylinder/400x800bb-4.png","Projects_Images/Cylinder/400x800bb-5.png","Projects_Images/Cylinder/400x800bb-6.png","Projects_Images/Cylinder/400x800bb-7.png","Projects_Images/Cylinder/400x800bb-8.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/Cylinder.jpg" alt="App Icon"><span class="gallery-icon-name">Cylinder</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-2.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-3.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-4.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-5.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-6.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-7.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-8.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-2.png" alt="Cylinder">
+              <img class="screenshot" src="Projects_Images/Cylinder/400x800bb-3.png" alt="Cylinder">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/Cylinder.jpg" class="app-icon" alt="Cylinder">
+              <h5>Cylinder</h5>
+            </div>
+            <p class="project-description">Gas delivery app with location, instant or scheduled delivery, and flexible payments.</p>
+            <div class="project-tech">
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">Deep Link</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/cylinder-%D8%A7%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A9/id6708238179" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Record -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Smart Record"
+             data-icon="App_Icons/SmartRecord.png"
+             data-images='["Projects_Images/SmartRecord/0x0ss.png","Projects_Images/SmartRecord/0x0ss-2.png","Projects_Images/SmartRecord/0x0ss-3.png","Projects_Images/SmartRecord/0x0ss-4.png","Projects_Images/SmartRecord/0x0ss-5.png","Projects_Images/SmartRecord/0x0ss-6.png","Projects_Images/SmartRecord/0x0ss-7.png","Projects_Images/SmartRecord/0x0ss-8.png","Projects_Images/SmartRecord/0x0ss-9.png"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/SmartRecord.png" alt="App Icon"><span class="gallery-icon-name">Smart Record</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-2.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-3.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-4.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-5.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-6.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-7.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-8.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-9.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-2.png" alt="Smart Record">
+              <img class="screenshot" src="Projects_Images/SmartRecord/0x0ss-3.png" alt="Smart Record">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/SmartRecord.png" class="app-icon" alt="Smart Record">
+              <h5>Smart Record</h5>
+            </div>
+            <p class="project-description">High-quality audio recording app with trimming, noise reduction, and cloud backup.</p>
+            <div class="project-tech">
+              <span class="tech-tag">UIKit</span>
+              <span class="tech-tag">AVFoundation</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <span class="project-link" style="opacity:0.5; pointer-events:none;">Coming Soon <i class="fas fa-clock"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pikrose -->
+      <div class="col-md-6 reveal">
+        <div class="project-card"
+             data-title="Pikrose"
+             data-icon="App_Icons/PickRose_Client.png"
+             data-images='["Projects_Images/PikroseClient/460x996bb.webp","Projects_Images/PikroseClient/460x996bb-2.webp","Projects_Images/PikroseClient/460x996bb-3.webp","Projects_Images/PikroseClient/460x996bb-4.webp","Projects_Images/PikroseClient/460x996bb-5.webp","Projects_Images/PikroseClient/460x996bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/PickRose_Client.png" alt="App Icon"><span class="gallery-icon-name">Pikrose</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-2.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-3.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-4.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-5.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-6.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-2.webp" alt="Pikrose">
+              <img class="screenshot" src="Projects_Images/PikroseClient/460x996bb-3.webp" alt="Pikrose">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/PickRose_Client.png" class="app-icon" alt="Pikrose">
+              <h5>Pikrose</h5>
+            </div>
+            <p class="project-description">Send heartfelt gifts for any occasion. Select your items, and the team prepares and delivers them with care.</p>
+            <div class="project-tech">
+              <span class="tech-tag">MVC</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">UIKit</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/pikrose/id1671909972" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pikrose Delegate -->
+      <div class="col-md-6 reveal reveal-delay-1">
+        <div class="project-card"
+             data-title="Pikrose Delegate"
+             data-icon="App_Icons/PickRose_Delegate.png"
+             data-images='["Projects_Images/PikroseDelegate/460x996bb.webp","Projects_Images/PikroseDelegate/460x996bb-2.webp","Projects_Images/PikroseDelegate/460x996bb-3.webp","Projects_Images/PikroseDelegate/460x996bb-4.webp","Projects_Images/PikroseDelegate/460x996bb-5.webp","Projects_Images/PikroseDelegate/460x996bb-6.webp"]'>
+          <div class="screenshot-gallery">
+                        <div class="gallery-icon-overlay"><img src="App_Icons/PickRose_Delegate.png" alt="App Icon"><span class="gallery-icon-name">Pikrose Delegate</span></div>
+            <div class="screenshot-track">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-2.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-3.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-4.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-5.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-6.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-2.webp" alt="Pikrose Delegate">
+              <img class="screenshot" src="Projects_Images/PikroseDelegate/460x996bb-3.webp" alt="Pikrose Delegate">
+            </div>
+            <span class="gallery-hint">Click to view all</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <img src="App_Icons/PickRose_Delegate.png" class="app-icon" alt="Pikrose Delegate">
+              <h5>Pikrose Delegate</h5>
+            </div>
+            <p class="project-description">Manage and fulfill gift delivery orders efficiently with the delegate version of Pikrose.</p>
+            <div class="project-tech">
+              <span class="tech-tag">MVC</span>
+              <span class="tech-tag">Combine</span>
+              <span class="tech-tag">UIKit</span>
+            </div>
+            <a href="https://apps.apple.com/eg/app/pikrose-delegate/id6445875946" class="project-link" target="_blank">App Store <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Screenshot Modal -->
+<div class="modal fade" id="screenshotModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery" id="modalGallery"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
 <footer class="text-center py-4">
-  Thanks for scrolling! 👨‍💻
+  Thanks for scrolling!
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Handle navbar active class toggle
-  document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-    navLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        navLinks.forEach((el) => el.classList.remove("active"));
-        this.classList.add("active");
-      });
-    });
-  });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
