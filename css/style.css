@@ -661,4 +661,15 @@ footer {
   .screenshot-gallery { height: 220px; }
   .modal-gallery img { height: 360px; }
   .project-info { padding: 20px; }
+
+  .gallery-icon-overlay img {
+    width: 35%;
+    max-width: 90px;
+    border-radius: 22%;
+  }
+  .gallery-icon-name {
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
 }
