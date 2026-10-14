@@ -45,7 +45,7 @@ Entrance states live in CSS; `js/main.js` only decides when to release them. Ani
 
 ## Assets
 
-- **`App_Icons/`** — App icons, `profile.webp` (hero portrait, 480px square head-and-shoulders crop shown as a ringed circle), `favicon.png` (round browser-tab icon), `avatar.png` (square apple-touch-icon), `og-image.jpg` (link preview), and the CV PDF.
+- **`App_Icons/`** — App icons, `profile.webp` (hero portrait, 480px square head-and-shoulders crop shown as a ringed circle), `favicon.svg` (Apple logo tab icon, black or white to match the browser theme) with a `favicon.png` fallback, `avatar.png` (white Apple logo on black, apple-touch-icon), `og-image.jpg` (link preview), and the CV PDF.
 - **`Projects_Images/<ProjectName>/`** — App Store screenshots per app.
 
 ## Development
